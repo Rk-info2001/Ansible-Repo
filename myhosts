@@ -1,11 +1,9 @@
 [javaserver]
 172.31.18.134
 172.31.20.206
+172.31.18.130
+172.31.20.200
 
 [databaseserver]
 172.31.18.133
 172.31.20.205
-
-[javaserver:vars]
-myubuntujavapackage = openjdk-8-jre
-myredhatjavapackage = java-1.8.0-openjdk
