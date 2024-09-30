@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: javaserver
   become: yes
   tasks:
     - name: Install the package openjdk-8 on Ubuntu server
