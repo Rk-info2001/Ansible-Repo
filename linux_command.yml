@@ -11,12 +11,12 @@
         msg: "{{ myresult }}"
     - name: Install git
       apt:
-        name: gitt
+        name: git
         state: present
       when: myresult.stderr == ""
 
     - name: Install tree
       apt:
-        name: tree  # Corrected to install tree
+        name: trree  # Corrected to install tree
         state: present
-      when: myresult.stderr != ""
+      when: myresult.stderr == ""
