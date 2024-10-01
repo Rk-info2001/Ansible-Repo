@@ -9,5 +9,5 @@
   tasks:
     - name: Display variable myvar1
       debug:
-        msg: "{{ myvar1 }}"
+        msg: "{{ myvar3 }}"
 
