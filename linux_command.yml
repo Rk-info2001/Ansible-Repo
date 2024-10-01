@@ -1,0 +1,11 @@
+---
+- hosts: javaserver
+  become: yes
+  tasks:
+    - name: Run linux command to get fully qualified hostname
+      command: hostname -f
+      register: myresult
+
+    - name: Display the output of the linux command
+      debug:
+        msg: "{{ myresult }}"
