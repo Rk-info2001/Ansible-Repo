@@ -19,3 +19,4 @@
         - "{{ myvar1 }}"
         - "{{ myvar2 }}"
         - "{{ myvar3 }}"
+      when: ansible_os_family == "Debian"
