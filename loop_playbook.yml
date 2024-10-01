@@ -7,7 +7,15 @@
     myvar3: apache2
 
   tasks:
-    - name: Display variable myvar1
+    - name: Display variable myvar3
       debug:
         msg: "{{ myvar3 }}"
 
+    - name: Install Packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - "{{ myvar1 }}"
+        - "{{ myvar2 }}"
+        - "{{ myvar3 }}"
