@@ -9,3 +9,14 @@
     - name: Display the output of the linux command
       debug:
         msg: "{{ myresult }}"
+    - name: Install git
+      apt:
+        name: gitt
+        state: present
+      when: myresult.stderr == ""
+
+    - name: Install tree
+      apt:
+        name: tree  # Corrected to install tree
+        state: present
+      when: myresult.stderr != ""
