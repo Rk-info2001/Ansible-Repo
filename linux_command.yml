@@ -17,6 +17,6 @@
 
     - name: Install tree
       apt:
-        name: trree  # Corrected to install tree
+        name: tree  # Corrected to install tree
         state: present
       when: myresult.stderr != ""
